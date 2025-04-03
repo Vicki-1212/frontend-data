@@ -14,7 +14,7 @@ const HomePage = () => {
 
   const fetchData = async () => {
     //fetch data from backend
-    const message = await fetch("http://localhost:3000/data");
+    const message = await fetch("https://backend-data-qqiy.onrender.com/data");
     const data = await message.json();
     setInputValue(data[data.length - 1].text.split(" "));
   };

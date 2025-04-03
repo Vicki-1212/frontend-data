@@ -31,7 +31,10 @@ const Form = () => {
       },
       body: JSON.stringify({ text: inputText }),
     };
-    const response = await fetch("http://localhost:3000/api/data", options);
+    const response = await fetch(
+      "https://backend-data-qqiy.onrender.com/api/data",
+      options
+    );
     const data = await response.json();
     setResponse(data.message);
   };
