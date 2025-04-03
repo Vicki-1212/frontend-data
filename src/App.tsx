@@ -3,17 +3,17 @@
 import "./App.css";
 import Form from "./components/Form/Form";
 import HomePage from "./components/HomePage/HomePage";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { HashRouter, Route, Routes } from "react-router-dom";
 
 const App = () => {
   return (
     <>
-      <BrowserRouter>
+      <HashRouter>
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/cms" element={<Form />} />
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
     </>
   );
 };
